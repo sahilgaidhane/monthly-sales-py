@@ -1,0 +1,10 @@
+monthly_sales =[42,38,33,38,40,45]
+month =["jan","feb","march","april","may","june"]
+
+thresold = 35
+for sales_ampunt,month in zip(monthly_sales,month):
+    if sales_ampunt < thresold:
+        print( f"sales amount {sales_ampunt} is less than thresold in {month} ")
+        break
+    else:
+        print(f" sales_ampunt {sales_ampunt} is greater than thresold in {month}")
